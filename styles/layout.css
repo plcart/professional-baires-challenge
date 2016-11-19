@@ -1,0 +1,105 @@
+body {
+    background: #f0f3f5;
+    font-family: 'Helvetica Neue Light';
+}
+div{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container section{
+  border-top: 2px solid #5aafe0;
+  border-left: 1px solid #e9ecee;
+  border-right: 1px solid #e9ecee;
+  border-bottom: 1px solid #e9ecee; 
+  margin-top: 30px;
+}
+/* Panel header */
+
+.container section .panel-heading{
+  border-top: 10px solid #288bc6;
+  background: #fff; 
+}
+.container section .panel-heading .panel-title {  
+  border-bottom: 2px solid #dae1e6; 
+  font-size: 26px; 
+  margin: 30px 20px 0px; 
+  padding-bottom: 20px; 
+  color: #363c40;
+}
+
+.container section .panel-heading p {  
+  padding: 0 20px;
+  font-size: 15px;
+  color: #737a80;
+}
+
+.container section .panel-body {
+  background: #f7fafc;
+} 
+.container section .panel-body .feature-blocks{
+  padding: 20px 20px; 
+}
+.container section .panel-body .feature-blocks .feature-blocks-item{
+  clear: left;
+  margin-bottom: 20px;
+}
+.container section .panel-body .feature-blocks .feature-blocks-item h3{
+  font-size: 26px; 
+  margin: 0 0 20px 0;
+  color: #363c40;
+}
+.container section .panel-body .feature-blocks .feature-blocks-item p{
+  font-size: 15px;
+  color: #737a80;
+}
+.container section .panel-body .feature-blocks .feature-blocks-item:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container section .panel-body .feature-blocks .feature-blocks-item ul{
+  float: left;
+  margin-top: 0px;
+  padding-left: 27px;
+}
+
+
+.container section .panel-body .feature-blocks .feature-blocks-item ul li{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0px 30px 0 0;
+  font-size: 13px;
+  color: #42484d;
+  list-style :square outside url('../assets/images/icons/bullet.png');
+  position: relative;
+  margin-top: 15px;
+}
+.container section .panel-body .feature-blocks .feature-blocks-item ul li:not(:last-child){
+  min-height: 70px;
+}
+.container section .panel-body .feature-blocks .feature-blocks-item ul li span{
+  float: right;
+  width: 100%;
+}
+
+
+
+@media (min-width: 910px) {
+.container{
+  width: 910px;
+}
+}
+@media(max-width: 425px){
+.container section .panel-body .feature-blocks .feature-blocks-item ul li{
+  width: 100%
+}
+}

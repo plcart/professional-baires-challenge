@@ -1,0 +1,165 @@
+.scroll-nav {
+    position: relative;
+    display:inline-block;
+    width:100%;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.scroll-nav .scroll-nav-box {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    white-space:nowrap; 
+    margin: 15px 10px
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section {
+    display: table-cell;
+    overflow:hidden;
+    cursor: pointer;
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item {
+    text-align: center; 
+    padding-left: 25px;
+    padding-right: 75px;
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item a{
+    text-decoration: none;
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item .scroll-nav-title{
+    text-transform: uppercase;
+    color: #d5d7d8;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section.active .scroll-nav-item .scroll-nav-title{
+    color: #2f8cc4;
+}
+
+@media (max-width: 768px) {
+.scroll-nav .scroll-nav-box:before {
+    content: "\00a0";
+    background: -webkit-linear-gradient(left, #FFF, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #FFF, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #FFF, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #FFF, transparent); /* Standard syntax */
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.scroll-nav .scroll-nav-box:after {
+    content: "\00a0";
+    background: -webkit-linear-gradient(right, #FFF, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FFF, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FFF, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #FFF, transparent); /* Standard syntax */
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top: 0;
+}
+}
+
+@media (max-width: 425px) {
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item {
+    text-align: center; 
+    padding-right: 10px;
+}
+}
+
+/*icons*/
+/*features*/
+.guide-features .scroll-nav-item .icon {
+    display: inline-block;
+    background-image: url('../assets/images/icons/icons-features.png');
+    width: 48px;
+    height: 48px;
+}
+.guide-features .scroll-nav-item .icon.icon-coverage {
+    background-position-x: -356px;
+}
+.guide-features .scroll-nav-section.active .icon.icon-coverage {
+    background-position-x: 0;
+}
+.guide-features .scroll-nav-item .icon.icon-mechanics {
+    background-position-x: -476px;
+}
+.guide-features .scroll-nav-section.active .icon.icon-mechanics {
+    background-position-x: -117px;
+}
+.guide-features .scroll-nav-item .icon.icon-cost {
+    background-position-x: -535px;
+}
+.guide-features .scroll-nav-section.active .icon.icon-cost {
+    background-position-x: -176px;
+}
+.guide-features .scroll-nav-item .icon.icon-optional {
+    background-position-x: -595px; 
+}
+.guide-features .scroll-nav-section.active .icon.icon-optional {
+    background-position-x: -234px; 
+}
+.guide-features .scroll-nav-item .icon.icon-exclusions {
+    background-position-x: -415px;
+}
+.guide-features .scroll-nav-section.active .icon.icon-exclusions {
+    background-position-x: -59px;
+}
+.guide-features .scroll-nav-item .icon.icon-ratings {
+    background-position-x: -651px;
+}
+.guide-features .scroll-nav-section.active .icon.icon-ratings {
+    background-position-x: -296px;
+}
+
+
+
+.guide-student-drivers .scroll-nav-item .icon {
+    display: inline-block;
+    background-image: url('../assets/images/icons/icons-students.png');
+    width: 48px;
+    height: 48px;
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-experience {
+    background-position-x: -346px;
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-experience {
+    background-position-x: 0;
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-conditions {
+    background-position-x: -401px;
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-conditions {
+    background-position-x: -60px;
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-instructions {
+    background-position-x: -454px;
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-instructions {
+    background-position-x: -117px;
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-example {
+    background-position-x: -508px; 
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-example {
+    background-position-x: -177px; 
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-relax {
+    background-position-x: -564px;
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-relax {
+    background-position-x: -232px;
+}
+.guide-student-drivers .scroll-nav-item .icon.icon-discounts {
+    background-position-x: -618px;
+}
+.guide-student-drivers .scroll-nav-section.active .icon.icon-discounts {
+    background-position-x: -293px;
+}
