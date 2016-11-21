@@ -50,7 +50,6 @@
                         current.posNew += current.mouseXOld - current.mouseX;
                     else
                         current.posNew -= current.mouseX - current.mouseXOld;
-                    console.log(current.posNew);
                     e.currentTarget.scrollLeft = current.posNew;
                 }
                 current.mouseXOld = current.mouseX;
