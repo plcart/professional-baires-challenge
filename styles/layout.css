@@ -93,13 +93,20 @@ div{
 
 
 
+@media(max-width: 425px){
+.container section .panel-heading .panel-title {  
+  margin: 20px 20px 0px; 
+}
+.container section .panel-body .feature-blocks .feature-blocks-item ul li{
+  width: 100%
+}
+.container section .panel-heading > p{
+  display: none;
+} 
+}
+
 @media (min-width: 910px) {
 .container{
   width: 910px;
-}
-}
-@media(max-width: 425px){
-.container section .panel-body .feature-blocks .feature-blocks-item ul li{
-  width: 100%
 }
 }

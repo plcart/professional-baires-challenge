@@ -40,39 +40,7 @@
     color: #2f8cc4;
 }
 
-@media (max-width: 768px) {
-.scroll-nav .scroll-nav-box:before {
-    content: "\00a0";
-    background: -webkit-linear-gradient(left, #FFF, transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #FFF, transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #FFF, transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(left, #FFF, transparent); /* Standard syntax */
-    width: 30px;
-    height: 100%;
-    position: absolute;
-    left:0;
-    top: 0;
-}
-.scroll-nav .scroll-nav-box:after {
-    content: "\00a0";
-    background: -webkit-linear-gradient(right, #FFF, transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #FFF, transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #FFF, transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(right, #FFF, transparent); /* Standard syntax */
-    width: 30px;
-    height: 100%;
-    position: absolute;
-    right:0;
-    top: 0;
-}
-}
 
-@media (max-width: 425px) {
-.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item {
-    text-align: center; 
-    padding-right: 10px;
-}
-}
 
 /*icons*/
 /*features*/
@@ -162,4 +130,51 @@
 }
 .guide-student-drivers .scroll-nav-section.active .icon.icon-discounts {
     background-position-x: -293px;
+}
+
+
+@media (max-width: 425px) {
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item {
+    text-align: center; 
+    padding-right: 10px;
+    padding-left: 12px;
+}
+.scroll-nav .scroll-nav-box .scroll-nav-section .scroll-nav-item .scroll-nav-title {
+    margin-top: 0px;
+}
+
+.guide-features .scroll-nav-item .icon,
+.guide-student-drivers .scroll-nav-item .icon{
+    -ms-transform: scale(0.75); /* IE 9 */
+    -webkit-transform: scale(0.75); /* Safari */
+    transform: scale(0.75);
+}
+
+}
+
+@media (max-width: 768px) {
+.scroll-nav .scroll-nav-box:before {
+    content: "\00a0";
+    background: -webkit-linear-gradient(left, #FFF, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #FFF, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #FFF, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #FFF, transparent); /* Standard syntax */
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.scroll-nav .scroll-nav-box:after {
+    content: "\00a0";
+    background: -webkit-linear-gradient(right, #FFF, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #FFF, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #FFF, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #FFF, transparent); /* Standard syntax */
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right:0;
+    top: 0;
+}
 }

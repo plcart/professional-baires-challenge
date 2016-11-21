@@ -1,6 +1,6 @@
 (function (doc) {
     'use strict';
-    var navControl = {}
+    var navControl = {};
     doc.addEventListener("DOMContentLoaded", function () {
         var navs = doc.getElementsByClassName('scroll-nav-box');
         for (var i = 0; i < navs.length; i++) {
@@ -16,23 +16,46 @@
             };
 
             nav.addEventListener('mouseup', function (e) {
-                navControl[e.currentTarget.id].mousePress = false
+                navControl[e.currentTarget.id].mousePress = false;
             });
             nav.addEventListener('mousedown', function (e) {
-                navControl[e.currentTarget.id].mousePress = true
+                navControl[e.currentTarget.id].mousePress = true;
             });
             nav.addEventListener('mousemove', function (e) {
                 var current = navControl[e.currentTarget.id]
                 current.mouseX = e.pageX;
                 if (current.mousePress) {
                     if (current.mouseXOld > current.mouseX)
-                        current.posNew += 2;
+                        current.posNew += current.mouseXOld - current.mouseX;
                     else
-                        current.posNew -= 2;
+                        current.posNew -= current.mouseX - current.mouseXOld;
                     e.currentTarget.scrollLeft = current.posNew;
                 }
                 current.mouseXOld = current.mouseX;
             });
+
+            nav.addEventListener('touchend', function (e) {
+                navControl[e.currentTarget.id].mousePress = true;
+            });
+            nav.addEventListener('touchstart', function (e) {
+                navControl[e.currentTarget.id].mousePress = true;
+            });
+
+            nav.addEventListener('touchmove', function (e) {
+                var idx = e.targetTouches[0];
+                var current = navControl[e.currentTarget.id]
+                current.mouseX = idx.pageX;
+                if (current.mousePress) {
+                    if (current.mouseXOld > current.mouseX)
+                        current.posNew += current.mouseXOld - current.mouseX;
+                    else
+                        current.posNew -= current.mouseX - current.mouseXOld;
+                    console.log(current.posNew);
+                    e.currentTarget.scrollLeft = current.posNew;
+                }
+                current.mouseXOld = current.mouseX;
+            });
+
 
             for (var k = 0; k < items.length; k++) {
                 items[k].addEventListener('click', function () {
@@ -53,4 +76,3 @@
         }
     });
 })(document);
-
